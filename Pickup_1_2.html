@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- styles-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="cart.js" async></script>
+    <script src="checkout.js" async></script>
+
+    <title>Bun Bun Bakery</title>
+    <meta charset="UTF-8">
+</head>
+
+<!--Header-->
+<div class="Header2-Grid">
+
+    <div class="Header2-Grid-Item2">
+        <a href="index.html"> <img src="https://i.imgur.com/q3X2MHf.png" title="source: imgur.com" width="100"
+                height="100" /></a>
+    </div>
+
+    <div class="Header2-Grid-Item">
+        <div style="text-align: center;">
+            <a href="Pickup_Order.html">
+                <button class="Confirmed-button">
+                    Pickup
+                </button>
+            </a>
+            <a href="Pickup_Order.html">
+                <button class="Option-button">
+                    Delivery
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="Header2-Grid-Item">
+        <!-- empty -->
+    </div>
+</div>
+
+
+<body>
+
+    <!--How Many Buns are you looking for today?-->
+
+    <div class="Questions">
+        <div style="text-align: center;">
+            <h2>Time to pick what you'd like!</h2>
+            <p>All Buns are $2.99 Each. Go stupid go crazy</p>
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <p2>You can add </p2>
+        <div class="Cart">3</div>
+        <p2>more buns to your order!</p2>
+    </div>
+
+    <div class="Product-Bun-Grid">
+        <!-- Original -->
+        <div class="Product-Bun-Grid-Item">
+            <img src="https://i.imgur.com/OpFD7Dg.png" alt="Original">
+            <br>
+            <div class="left-aligning">
+                <h1>Original</h1>
+                <p>Call me old fashioned, but you can’t beat a classic.</p>
+            </div>
+            <div id="Add-Original">
+                <button class="Add-button">
+                    +
+                </button>
+            </div>
+        </div>
+        <!-- Blackberry -->
+        <div class="Product-Bun-Grid-Item">
+            <img src="https://i.imgur.com/lKEsCyb.png" alt="Blackberry">
+            <br>
+            <div class="left-aligning">
+                <h1>Blackberry</h1>
+                <p>Unlike the ex-billion dollar company, our blackberry is meant to last</p>
+            </div>
+            <div id="Add-Blackberry">
+                <button class="Add-button">
+                    +
+                </button>
+            </div>
+        </div>
+
+        <!-- Add & Glaze Buttons -->
+        <div class="Product-Bun-Grid-Item2">
+            <button id="OriginalNoGlaze" class="Glaze-button">
+                No Glaze
+            </button>
+            <button id="OriginalVanillaMilk" class="Glaze-button">
+                Vanilla Milk
+            </button>
+            <button id="OriginalSugarMilk" class="Glaze-button">
+                Sugar Milk
+            </button>
+            <button id="OriginalDoubleChocolate" class="Glaze-button">
+                Double-Chocolate
+            </button>
+        </div>
+
+        <div class="Product-Bun-Grid-Item2">
+            <button id="bbNoGlaze" class="Glaze-button">
+                No Glaze
+            </button>
+            <button id="bbVanillaMilk" class="Glaze-button">
+                Vanilla Milk
+            </button>
+            <button id="bbSugarMilk" class="Glaze-button">
+                Sugar Milk
+            </button>
+            <button id="bbDoubleChocolate" class="Glaze-button">
+                Double-Chocolate
+            </button>
+        </div>
+        <!-- Walnut -->
+        <div class="Product-Bun-Grid-Item">
+            <img src="https://i.imgur.com/1qLORH3.png" alt="Walnut">
+            <br>
+            <div class="left-aligning">
+                <h1>Walnut</h1>
+                <p>The sweet, the crunch. I can taste it from here.</p>
+            </div>
+            <div id="Add-Walnut">
+                <button class="Add-button">
+                    +
+                </button>
+            </div>
+        </div>
+        <!-- Pumpkin Spice -->
+        <div class="Product-Bun-Grid-Item">
+            <img src="https://i.imgur.com/CELNJLP.png" alt="Pumpkin Spice">
+            <br>
+            <div class="left-aligning">
+                <h1>PSL Bun</h1>
+                <p>It’s fall baby. Imagine sweaters, hot cocoa, falling leaves in a bun. This is that bun.</p>
+            </div>
+            <div id="Add-Pumpkin">
+                <button class="Add-button">
+                    +
+                </button>
+            </div>
+        </div>
+
+        <!-- Add & Glaze Buttons -->
+        <div class="Product-Bun-Grid-Item2">
+            <button class="Glaze-button">
+                No Glaze
+            </button>
+            <button class="Glaze-button">
+                Vanilla Milk
+            </button>
+            <button class="Glaze-button">
+                Sugar Milk
+            </button>
+            <button class="Glaze-button">
+                Double-Chocolate
+            </button>
+        </div>
+
+        <div class="Product-Bun-Grid-Item2">
+            <button class="Glaze-button">
+                No Glaze
+            </button>
+            <button class="Glaze-button">
+                Vanilla Milk
+            </button>
+            <button class="Glaze-button">
+                Sugar Milk
+            </button>
+            <button class="Glaze-button">
+                Double-Chocolate
+            </button>
+        </div>
+
+        <!-- Caramel Pecan -->
+        <div class="Product-Bun-Grid-Item">
+            <img src="https://i.imgur.com/nHAZdQZ.png" alt="Caramel Pecan">
+            <br>
+            <div class="left-aligning">
+                <h1>Caramel Pecan</h1>
+                <p>You have a sweet tooth, don't doubt it. This will get you there</p>
+            </div>
+            <div id="Add-Caramel">
+                <button class="Add-button">
+                    +
+                </button>
+            </div>
+        </div>
+        <!-- Gluten Free -->
+        <div class="Product-Bun-Grid-Item">
+            <img src="https://i.imgur.com/uXP2DSK.png" alt="Gluten Free">
+            <br>
+            <div class="left-aligning">
+                <h1>Gluten Free</h1>
+                <p>It’s the original. But without gluten. </p>
+            </div>
+            <div id="Add-Gluten">
+                <button class="Add-button">
+                    +
+                </button>
+            </div>
+        </div>
+
+        <!-- Add & Glaze Buttons -->
+        <div class="Product-Bun-Grid-Item2">
+            <button class="Glaze-button">
+                No Glaze
+            </button>
+            <button class="Glaze-button">
+                Vanilla Milk
+            </button>
+            <button class="Glaze-button">
+                Sugar Milk
+            </button>
+            <button class="Glaze-button">
+                Double-Chocolate
+            </button>
+        </div>
+
+        <div class="Product-Bun-Grid-Item2">
+            <button class="Glaze-button">
+                No Glaze
+            </button>
+            <button class="Glaze-button">
+                Vanilla Milk
+            </button>
+            <button class="Glaze-button">
+                Sugar Milk
+            </button>
+            <button class="Glaze-button">
+                Double-Chocolate
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="Questions">
+        <div style="text-align: center;">
+            <h2>Your Order</h2>
+        </div>
+    </div>
+
+    <div class="Checkout-Bun-Grid">
+        <!-- Names -->
+        <div class="Checkout-Bun-Grid-Item">
+            Bun
+        </div>
+
+        <!-- Quantity -->
+        <div class="Checkout-Bun-Grid-Item">
+            Quantity
+        </div>
+
+        <!-- Total -->
+        <div class="Checkout-Bun-Grid-Item">
+            Price
+        </div>
+
+        <!-- Original -->
+        <div class="Checkout-Bun-Grid-Item">
+            <img src="https://i.imgur.com/OpFD7Dg.png" alt="Original">
+            <br>
+            <div class="left-aligning">
+                <h1>Original</h1>
+                <p>Call me old fashioned, but you can’t beat a classic.</p>
+                <button class="Remove-button" id="og-remove">
+                    Remove
+                </button>
+                <button class="GlazeFinalBun" id="OG">
+                    No Glaze
+                </button>
+            </div>
+        </div>
+
+        <div class="Checkout-Bun-Grid-Item2">
+            <div class="quantity-number">
+                <h2> 0</h2>
+            </div>
+        </div>
+
+        <div class="Checkout-Bun-Grid-Item2">
+            <div class="price-number">
+                <h2>0</h2>
+            </div>
+        </div>
+
+        <!-- Blackberry -->
+        <div class="Checkout-Bun-Grid-Item">
+            <img src="https://i.imgur.com/lKEsCyb.png" alt="Blackberry">
+            <br>
+            <div class="left-aligning">
+                <h1>Blackberry</h1>
+                <p>Unlike the ex-billion dollar company, our blackberry is meant to last</p>
+                <button class="Remove-button" id="bb-remove">
+                    Remove
+                </button>
+                <button class="GlazeFinalBun" id="BB">
+                    No Glaze
+                </button>
+            </div>
+        </div>
+
+        <div class="Checkout-Bun-Grid-Item2">
+            <div class="quantity-number">
+                <h2>0</h2>
+            </div>
+        </div>
+
+        <div class="Checkout-Bun-Grid-Item2">
+            <div class="price-number">
+                <h2>0</h2>
+            </div>
+        </div>
+
+        <!-- Walnut -->
+        <div class="Checkout-Bun-Grid-Item">
+            <img src="https://i.imgur.com/1qLORH3.png" alt="Walnut">
+            <br>
+            <div class="left-aligning">
+                <h1>Walnut</h1>
+                <p>The sweet, the crunch. I can taste it from here.</p>
+                <button class="Remove-button" id="walnut-remove">
+                    Remove
+                </button>
+                <button class="GlazeFinalBun" id="Walnut">
+                    No Glaze
+                </button>
+            </div>
+        </div>
+
+        <div class="Checkout-Bun-Grid-Item2">
+            <div class="quantity-number">
+                <h2>0</h2>
+            </div>
+        </div>
+
+        <div class="Checkout-Bun-Grid-Item2">
+            <div class="price-number">
+                <h2>0</h2>
+            </div>
+        </div>
+
+        <!-- PSL -->
+        <div class="Checkout-Bun-Grid-Item">
+            <img src="https://i.imgur.com/CELNJLP.png" alt="Pumpkin Spice">
+            <br>
+            <div class="left-aligning">
+                <h1>PSL Bun</h1>
+                <p>It’s fall baby. Imagine sweaters, hot cocoa, falling leaves in a bun. This is that bun.</p>
+                <button class="Remove-button" id="psl-remove">
+                    Remove
+                </button>
+                <button class="GlazeFinalBun" id="PSL">
+                    No Glaze
+                </button>
+            </div>
+        </div>
+
+        <div class="Checkout-Bun-Grid-Item2">
+            <div class="quantity-number">
+                <h2>0</h2>
+            </div>
+        </div>
+
+        <div class="Checkout-Bun-Grid-Item2">
+            <div class="price-number">
+                <h2>0</h2>
+            </div>
+        </div>
+
+        <!-- Caramel -->
+        <div class="Checkout-Bun-Grid-Item">
+            <img src="https://i.imgur.com/nHAZdQZ.png" alt="Caramel Pecan">
+            <br>
+            <div class="left-aligning">
+                <h1>Caramel Pecan</h1>
+                <p>You have a sweet tooth, don't doubt it. This will get you there</p>
+                <button class="Remove-button" id="caramel-remove">
+                    Remove
+                </button>
+                <button class="GlazeFinalBun" id="caramel">
+                    No Glaze
+                </button>
+            </div>
+        </div>
+
+        <div class="Checkout-Bun-Grid-Item2">
+            <div class="quantity-number">
+                <h2>0</h2>
+            </div>
+        </div>
+
+        <div class="Checkout-Bun-Grid-Item2">
+            <div class="price-number">
+                <h2>0</h2>
+            </div>
+        </div>
+
+        <!-- Gluten Free  -->
+        <div class="Checkout-Bun-Grid-Item">
+            <img src="https://i.imgur.com/uXP2DSK.png" alt="Gluten Free">
+            <br>
+            <div class="left-aligning">
+                <h1>Gluten Free </h1>
+                <p>It’s the original. But without gluten. You're welcome</p>
+                <button class="Remove-button" id="gf-remove">
+                    Remove
+                </button>
+                <button class="GlazeFinalBun" id="gf">
+                    No Glaze
+                </button>
+            </div>
+        </div>
+
+        <div class="Checkout-Bun-Grid-Item2">
+            <div class="quantity-number">
+                <h2>0</h2>
+            </div>
+        </div>
+
+        <div class="Checkout-Bun-Grid-Item2">
+            <div class="price-number">
+                <h2>0</h2>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="Total-Bun-Grid">
+
+        <div class="Total-Bun-Grid-Item">
+            <!-- empty -->
+        </div>
+
+        <div class="Total-Bun-Grid-Item">
+            Total Quantity
+        </div>
+
+        <div class="Total-Bun-Grid-Item">
+            Total Price
+        </div>
+
+        <div class="Total-Bun-Grid-Item-No-Line">
+            <!-- empty -->
+        </div>
+
+
+        <div id="TotalQuantity" class="Total-Bun-Grid-Item-No-Line">
+            0
+        </div>
+
+        <div id="TotalPrice" class="Total-Bun-Grid-Item-No-Line">
+            0
+        </div>
+
+    </div>
+
+    <!-- Graphic -->
+    <div class="SO1-Grid">
+        <div class="SO1-Grid-Item">
+            <!-- empty -->
+        </div>
+        <div class="SO1-Grid-Item">
+            <div style="padding: 4em;">
+                <img src="https://i.imgur.com/kdLGing.png" title="list 1" width="50%" height="50%">
+            </div>
+        </div>
+        <div class="SO1-Grid-Item">
+            <!-- empty -->
+        </div>
+    </div>
+
+
+</body>
+
+</html>
