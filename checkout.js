@@ -1,4 +1,4 @@
-// Assignment 6A
+//////////////////////////////// Assignment 6A
 
 // Creating a new array to store the 'Add' class in CSSS
 var addToCart = document.getElementsByClassName('Add-button')
@@ -20,7 +20,7 @@ for (var i = 0; i < addToCart.length; i++) {
     })
 }
 
-// Assignment 6B
+//////////////////////////////// Assignment 6B
 
 // item pic + desc
 var checkoutItems = document.getElementsByClassName('Checkout-Bun-Grid-Item')
@@ -413,6 +413,7 @@ gfChocolate.addEventListener('click', function () {
     gfGlaze.innerHTML = glazes[3]
 })
 
+//Creating a Function to update the "Your Order" when a user selects the remove button 
 function updateRemove (name, quantity, c, q, p) {
     localStorage.setItem(name, quantity)
     var curr = checkoutItems[c]
@@ -438,6 +439,7 @@ function updateRemove (name, quantity, c, q, p) {
         cartNum.innerText = 3 - totalQuantity
 }
 
+//Defining Original's Remove button and adding an event listener to remove the item
 var ogRemove = document.getElementById("og-remove")
 ogRemove.addEventListener('click', function () {
     console.log('original removed')
@@ -450,6 +452,7 @@ ogRemove.addEventListener('click', function () {
     updateRemove("originalQ", quantity, 3, 0, 1)
 })
 
+//Defining BB's Remove button and adding an event listener to remove the item
 var bbRemove = document.getElementById("bb-remove")
 bbRemove.addEventListener('click', function () {
     console.log('bb removed')
@@ -462,6 +465,7 @@ bbRemove.addEventListener('click', function () {
     updateRemove("bbQ", quantity, 4, 2, 3)
 })
 
+//Defining Walnuts's Remove button and adding an event listener to remove the item
 var walnutRemove = document.getElementById("walnut-remove")
 walnutRemove.addEventListener('click', function () {
     console.log('walnut removed')
@@ -474,6 +478,7 @@ walnutRemove.addEventListener('click', function () {
     updateRemove("walnutQ", quantity, 5, 4, 5)
 })
 
+//Defining PSL's Remove button and adding an event listener to remove the item
 var pslRemove = document.getElementById("psl-remove")
 pslRemove.addEventListener('click', function () {
     console.log('psl removed')
@@ -486,6 +491,7 @@ pslRemove.addEventListener('click', function () {
     updateRemove("pumpkinQ", quantity, 6, 6, 7)
 })
 
+//Defining Caramel's Remove button and adding an event listener to remove the item
 var caramelRemove = document.getElementById("caramel-remove")
 caramelRemove.addEventListener('click', function () {
     console.log('caramel removed')
@@ -498,6 +504,7 @@ caramelRemove.addEventListener('click', function () {
     updateRemove("caramelQ", quantity, 7, 8, 9)
 })
 
+//Defining GF's Remove button and adding an event listener to remove the item
 var gfRemove = document.getElementById("gf-remove")
 gfRemove.addEventListener('click', function () {
     console.log('gf removed')
